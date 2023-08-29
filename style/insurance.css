@@ -23,7 +23,7 @@
 @media screen and (max-width: 767px) {
     .insurance {
         width: 100%;
-        height: 903px;
+        height: 100%;
         align-items: center;
         display: flex;
         flex-flow: column nowrap;
@@ -64,7 +64,7 @@
 @media screen and (max-width: 767px) {
     .insuranceTag {
         width: 90%;
-        height: 446px;
+        height: 100%;
         gap: 33px;
         padding-left: 0px;
         padding-top: 50px;
@@ -93,6 +93,8 @@
 
 @media screen and (max-width: 767px) {
     .insuranceTag>p {
+        width: auto;
+        height: auto;
         padding: 0px;
         text-align: center;
     }
@@ -221,6 +223,27 @@
     z-index: 9999;
 }
 
+@media screen and (max-width: 767px) {
+    .imgBg {
+        width: 100%;
+        height: 50%;    
+    }
+    
+    .blurbg {
+        width: 100%;
+        height: 50%; 
+    }
+    
+    .imgBg>img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .imgBg>p {
+        padding: 0px;
+    }
+}
+
 .advice>p {
     height: 54px;
     color: #95A7B8;
@@ -347,8 +370,11 @@
 
 @media screen and (max-width: 767px) {
     .optionsLayout>p {
+        width: auto;
+        height: auto;
         padding-top: 0px;
         padding-bottom: 0px;
+        text-align: center;
     }
 }
 

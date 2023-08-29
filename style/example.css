@@ -362,6 +362,14 @@ p {
     margin: 0px auto;
 }
 
+@media screen and (max-width: 767px) {
+    .twoArrows {
+        width: 55%;
+        gap: 85%;
+        margin: 0px auto;
+    }
+}
+
 .smallArrow {
     width: 22px;
     height: 0px;
