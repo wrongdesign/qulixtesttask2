@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/burger.css">
+    <link rel="stylesheet" href="style/example.css">
+    <link rel="stylesheet" href="style/insurance.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <title>Qulix Systems Task 2</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <div class="menu">
+            <a href="#about" id="aboutA" onclick="window.open('https://www.qulix.com/about/', '_blank');">about</a>
+            <a href="#team" id="teamA" onclick="window.open('https://www.mentoday.ru/life/career/klyuchevoy-faktor-uspeha-biznesa-kak-sobrat-effektivnuyu-komandu-i-organizovat-ee-rabotu/', '_blank');">team</a>
+            <a href="#tokenomics" id="tokenomicsA"
+                onclick="window.open('https://adviko.by/tokenomics.html#:~:text=Что%20такое%20токеномика&text=Это%20сбалансированная%20экономическая%20модель%20токена,%2C%20разработчики%20и%20так%20далее).', '_blank');">tokenomics</a>
+            <a href="#roadmap" id="roadmapA">roadmap</a>
+            <a href="#insurance" id="insuranceA">insurance</a>
+        </div>
+        <div class="burgerMenu" id="burgerButton" onclick="showMenu()">
+            <span id="line1"></span>
+            <span id="line2"></span>
+            <span id="line3"></span>
+        </div>
+        <div class="burgerMenuFrame" id="burgerMenuFrameId">
+            <div class="menuHeader">
+                <img src="images/logo.png" alt="logo" id="logo">
+                <img src="images/closeCross.png" alt="close button" onclick="closeMenu()" id="closeCross">
+            </div>
+            <div class="menuList">
+                <a href="https://www.qulix.com/about/" onclick="closeMenu()">about</a>
+                <div id="separator"></div>
+                <a href="https://www.mentoday.ru/life/career/klyuchevoy-faktor-uspeha-biznesa-kak-sobrat-effektivnuyu-komandu-i-organizovat-ee-rabotu/', '_blank');"" onclick="closeMenu()">team</a>
+                <div id="separator"></div>
+                <a href="https://adviko.by/tokenomics.html#:~:text=Что%20такое%20токеномика&text=Это%20сбалансированная%20экономическая%20модель%20токена,%2C%20разработчики%20и%20так%20далее)." onclick="closeMenu()">tokenomics</a>
+                <div id="separator"></div>
+                <a href="#roadmap" onclick="closeMenu()">roadmap</a>
+                <div id="separator"></div>
+                <a href="#insurance" onclick="closeMenu()">insurance</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- EXAMPLE -->
+    <a name="roadmap" style="height: 0px;"></a>
+    <div class="example">
+        <h1>Example</h1>
+        <div class="map">
+            <div class="case">
+                <p>The clients invested 5 BTC and 10 ETH</p>
+            </div>
+            <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="29" class="bigArraow">
+                    <path
+                        d="M6.79274 28.7071C7.18326 29.0976 7.81643 29.0976 8.20695 28.7071L14.5709 22.3432C14.9615 21.9527 14.9615 21.3195 14.571 20.929C14.1804 20.5384 13.5473 20.5384 13.1567 20.929L7.49986 26.5858L1.84303 20.9289C1.45251 20.5384 0.819347 20.5384 0.428821 20.9289C0.0382948 21.3194 0.0382914 21.9526 0.428813 22.3431L6.79274 28.7071ZM6.5 -5.31249e-06L6.49985 28L8.49985 28L8.5 5.31249e-06L6.5 -5.31249e-06Z"
+                        fill="#95A7B8" />
+                </svg>
+            </div>
+            <div class="case">
+                <p>Engine makes a mistake and portfolio looks like 5 BTC and 8 ETH </p>
+            </div>
+            <div class="twoArrows">
+                <div class="arrow2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="29" class="bigArraow">
+                        <path
+                            d="M6.79274 28.7071C7.18326 29.0976 7.81643 29.0976 8.20695 28.7071L14.5709 22.3432C14.9615 21.9527 14.9615 21.3195 14.571 20.929C14.1804 20.5384 13.5473 20.5384 13.1567 20.929L7.49986 26.5858L1.84303 20.9289C1.45251 20.5384 0.819347 20.5384 0.428821 20.9289C0.0382948 21.3194 0.0382914 21.9526 0.428813 22.3431L6.79274 28.7071ZM6.5 -5.31249e-06L6.49985 28L8.49985 28L8.5 5.31249e-06L6.5 -5.31249e-06Z"
+                            fill="#95A7B8" />
+                    </svg>
+                </div>
+                <div class="arrow2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="29" class="bigArraow">
+                        <path
+                            d="M6.79274 28.7071C7.18326 29.0976 7.81643 29.0976 8.20695 28.7071L14.5709 22.3432C14.9615 21.9527 14.9615 21.3195 14.571 20.929C14.1804 20.5384 13.5473 20.5384 13.1567 20.929L7.49986 26.5858L1.84303 20.9289C1.45251 20.5384 0.819347 20.5384 0.428821 20.9289C0.0382948 21.3194 0.0382914 21.9526 0.428813 22.3431L6.79274 28.7071ZM6.5 -5.31249e-06L6.49985 28L8.49985 28L8.5 5.31249e-06L6.5 -5.31249e-06Z"
+                            fill="#95A7B8" />
+                    </svg>
+                </div>
+            </div>
+            <div class="undercases">
+                <div class="cases">
+                    <div class="case1" id="case8">
+                        <p id="comment0">The clients wants to withdraw their assets</p>
+                        <p id="comm">*In case it is protected by insurance</p>
+                    </div>
+                    <div class="arrow3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="23" class="smallArraow">
+                            <path
+                                d="M6.79289 22.7071C7.18342 23.0976 7.81658 23.0976 8.20711 22.7071L14.5711 16.3431C14.9616 15.9526 14.9616 15.3195 14.5711 14.9289C14.1805 14.5384 13.5474 14.5384 13.1569 14.9289L7.5 20.5858L1.84315 14.9289C1.45262 14.5384 0.819456 14.5384 0.428932 14.9289C0.0384071 15.3195 0.0384071 15.9526 0.428931 16.3431L6.79289 22.7071ZM6.5 -4.37114e-08L6.5 22L8.5 22L8.5 4.37114e-08L6.5 -4.37114e-08Z"
+                                fill="#95A7B8" />
+                        </svg>
+                    </div>
+                    <div class="case" id="case5">
+                        <p>We compensate the amount of the shortage(i.e. 2 ETH)</p>
+                    </div>
+                </div>
+                <div class="cases">
+                    <div class="case1" id="case7">
+                        <p>The clients doesn’t want to withdraw their assets</p>
+                    </div>
+                    <div class="arrow3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="23" class="smallArraow">
+                            <path
+                                d="M6.79289 22.7071C7.18342 23.0976 7.81658 23.0976 8.20711 22.7071L14.5711 16.3431C14.9616 15.9526 14.9616 15.3195 14.5711 14.9289C14.1805 14.5384 13.5474 14.5384 13.1569 14.9289L7.5 20.5858L1.84315 14.9289C1.45262 14.5384 0.819456 14.5384 0.428932 14.9289C0.0384071 15.3195 0.0384071 15.9526 0.428931 16.3431L6.79289 22.7071ZM6.5 -4.37114e-08L6.5 22L8.5 22L8.5 4.37114e-08L6.5 -4.37114e-08Z"
+                                fill="#95A7B8" />
+                        </svg>
+                    </div>
+                    <div class="case" id="case6">
+                        <p>The algorithm will balance the portfolio with time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INSURANCE -->
+    <a name="insurance" style="height: 0px;"></a>
+    <div class="insurance">
+        <div class="insuranceTag">
+            <p>Insurance is based on Insurance Fund</p>
+            <div class="alladvice">
+                <div class="advice" id="advice1">
+                    <div class="imgBg">
+                        <div class="blurbg"></div>
+                        <img src="images/advice1.png" alt="advice1">
+                    </div>
+                    <p>deductions from the platform's profit</p>
+                </div>
+                <div class="advice" id="advice2">
+                    <div class="imgBg">
+                        <div class="blurbg"></div>
+                        <img src="images/advice2.png" alt="advice2">
+                    </div>
+                    <p>deductions from the profit on insured portfolios</p>
+                </div>
+            </div>
+        </div>
+        <div class="choose">
+            <img src="images/umbrella.png" alt="umbrella">
+            <div class="optionsLayout">
+                <p>Choose you option</p>
+                <div class="options">
+                    <div class="option" id="option1">
+                        <img src="images/option1.png" alt="option1">
+                        <p>Protection of the investments. Lower % of profit on them.</p>
+                    </div>
+                    <div class="option" id="option2">
+                        <img src="images/option2.png" alt="option2">
+                        <p>Higher % of the return on investments and higher risks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contact">
+            <div class="contactFrame">
+                <h1>Join Us Now</h1>
+                <div class="social">
+                    <p>Follow us to be updated about project stages</p>
+                    <div class="links">
+                        <img src="images/telegram.png" alt="telegram"
+                            onclick="window.open('https://web.telegram.org/a/', '_blank');">
+                        <img src="images/twitter.png" alt="twitter"
+                            onclick="window.open('https://twitter.com/?lang=ru', '_blank');">
+                        <img src="images/linkedin.png" alt="linkedin"
+                            onclick="window.open('https://www.linkedin.com/feed/', '_blank');">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs">
+            <div class="docsFrame">
+                <p onclick="window.open('https://www.google.com/intl/en-GB/docs/about/', '_blank');">Docs</p>
+                <p
+                    onclick="window.open('https://www.figma.com/file/wz8sSvGO3K4tEJRms5WqQR/Employee-card?type=design&node-id=0-1&mode=design&t=b14dO1oGVQGoImWm-0', '_blank');">
+                    Blog
+                </p>
+                <p id="copyright">© 2021 MintWhale. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+footer {
+    width: 1440px;
+    height: 367px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0px;
+}
+
+.contact {
+    width: 1440px;
+    height: 282px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactFrame {
+    width: 408px;
+    height: 202px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 51px;
+    justify-content: center;
+}
+
+.contactFrame>h1 {
+    height: 84px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.social {
+    width: 408px;
+    height: 77px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.social>p {
+    color: #95A7B8;
+    font-size: 18px;
+    height: 27px;
+}
+
+.links {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    margin: 0px auto;
+}
+
+.links>img {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    transition: 1s;
+}
+
+.links>img:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    z-index: 9999;
+}
+
+.docs {
+    width: 1440px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-light, #F4F5F6);
+}
+
+.docsFrame {
+    width: 217px;
+    height: 59px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 80px;
+}
+
+.docsFrame>p {
+    font-size: 18px;
+}
+
+.docsFrame>p:hover {
+    cursor: pointer;
+}
+
+.docsFrame>#copyright {
+    color: var(--gray-dark, #95A7B8);
+    font-feature-settings: 'liga' off;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.docsFrame>#copyright:hover {
+    cursor: default;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    footer {
+        width: 1024px;
+    }
+
+    .contact {
+        width: 1024px;
+    }
+
+    .docs {
+        width: 1024px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    footer {
+        width: 768px;
+    }
+
+    .contact {
+        width: 768px;
+    }
+
+    .docs {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .docs {
+        width: 100%;
+    }
+}
